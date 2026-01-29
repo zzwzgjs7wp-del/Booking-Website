@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: `Comprehensive HVAC services in ${siteConfig.serviceArea}. AC repair, installation, heating, maintenance, indoor air quality, and ductwork services.`,
+  description: `Comprehensive services in ${siteConfig.serviceArea}. Consultation, repair, installation, maintenance, and more.`,
   openGraph: {
-    title: `HVAC Services | ${siteConfig.name}`,
-    description: `Professional HVAC services in ${siteConfig.serviceArea}.`,
+    title: `Services | ${siteConfig.name}`,
+    description: `Professional services in ${siteConfig.serviceArea}.`,
   },
 };
 
@@ -21,11 +21,10 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our HVAC Services
+            Our Services
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
-            Comprehensive heating, cooling, and air quality solutions for your
-            home and business in {siteConfig.serviceArea}
+            Professional solutions for your home and business in {siteConfig.serviceArea}
           </p>
         </div>
       </section>

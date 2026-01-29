@@ -25,23 +25,23 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     name: "Sarah Johnson",
-    location: "Houston, TX",
+    location: "Local",
     rating: 5,
-    text: "ArcticPro HVAC saved us during a heatwave! Their technician arrived same-day and fixed our AC quickly. Professional, courteous, and reasonably priced. Highly recommend!",
-    service: "AC Repair",
+    text: "Fast, professional service! They arrived on time and completed the work quickly. Highly recommend!",
+    service: "Repair",
   },
   {
     name: "Michael Chen",
-    location: "Houston, TX",
+    location: "Local",
     rating: 5,
-    text: "We needed a new AC unit installed. The team was knowledgeable, helped us choose the right system, and the installation was flawless. Our energy bills have dropped significantly!",
-    service: "AC Installation",
+    text: "The team was knowledgeable and helped us choose the right option. Installation was flawless.",
+    service: "Installation",
   },
   {
     name: "Patricia Martinez",
-    location: "Houston, TX",
+    location: "Local",
     rating: 5,
-    text: "Regular maintenance plan has kept our HVAC system running perfectly for years. The technicians are always on time and thorough. Great service!",
+    text: "Regular maintenance plan keeps everything running smoothly. Always on time and thorough.",
     service: "Maintenance",
   },
 ];
@@ -50,32 +50,32 @@ const faqs = [
   {
     question: "Do you offer same-day service?",
     answer:
-      "Yes! We offer same-day service for emergency repairs. Call us and we'll do our best to get a technician to your home the same day.",
+      "Yes! We offer same-day service when available. Call us or book online and we'll do our best to accommodate you.",
   },
   {
     question: "Are you licensed and insured?",
     answer:
-      "Absolutely. ArcticPro HVAC is fully licensed and insured. We carry comprehensive liability insurance and all our technicians are certified.",
+      "Yes. We are fully licensed and insured. We carry comprehensive liability insurance and our team is certified.",
   },
   {
     question: "What areas do you serve?",
     answer:
-      "We proudly serve Houston, TX and surrounding areas. Contact us to confirm if we service your specific location.",
+      "We serve our local area and surrounding communities. Contact us to confirm if we service your location.",
   },
   {
     question: "Do you offer financing options?",
     answer:
-      "Yes! We offer flexible financing options to make HVAC services more affordable. Visit our financing page or call us to learn more about available plans.",
+      "Yes! We offer flexible financing options. Visit our financing page or call us to learn more about available plans.",
   },
   {
-    question: "How often should I have my HVAC system serviced?",
+    question: "How often should I schedule maintenance?",
     answer:
-      "We recommend annual maintenance for your HVAC system - once in the spring for your AC and once in the fall for your heating system. This helps prevent breakdowns and keeps your system running efficiently.",
+      "We recommend regular maintenance to prevent issues and extend the life of your equipment. Contact us for a maintenance plan that fits your needs.",
   },
   {
-    question: "What brands do you service?",
+    question: "How do I book an appointment?",
     answer:
-      "We service all major HVAC brands including Carrier, Trane, Lennox, Rheem, Goodman, and more. Our technicians are trained on all makes and models.",
+      "You can book online through our website, call us directly, or fill out our contact form. We'll get back to you promptly.",
   },
 ];
 
@@ -84,9 +84,9 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteConfig.name,
-    image: "https://arcticprohvac.com/og-image.jpg",
-    "@id": "https://arcticprohvac.com",
-    url: "https://arcticprohvac.com",
+    image: "https://yourbusiness.com/og-image.jpg",
+    "@id": "https://yourbusiness.com",
+    url: "https://yourbusiness.com",
     telephone: siteConfig.phone,
     email: siteConfig.email,
     address: {
@@ -140,12 +140,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Expert HVAC Services in{" "}
+              Book Appointments Online in{" "}
               <span className="text-primary">{siteConfig.serviceArea}</span>
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Fast, reliable AC repair, installation, and maintenance. Licensed,
-              insured, and 5-star rated. Same-day service available.
+              Schedule your visit today. Professional services, flexible booking,
+              and same-day availability when possible.
             </p>
             <CTAButton type="both" />
           </div>
@@ -186,7 +186,7 @@ export default function HomePage() {
               Our Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive HVAC solutions for your home and business
+              Professional services for your home and business
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -225,11 +225,10 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-r from-primary to-cyan-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Spring AC Tune-Up Special
+            Book Your Appointment Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Get your AC ready for summer! Schedule a maintenance visit and save
-            20% on any repairs needed.
+            Schedule online in minutes. Flexible times available.
           </p>
           <CTAButton
             type="book"
@@ -293,8 +292,8 @@ export default function HomePage() {
               Serving {siteConfig.serviceArea}
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              We proudly serve Houston and surrounding areas with fast, reliable
-              HVAC services. Check if we service your area.
+              We proudly serve our local area and surrounding communities. Check
+              if we service your location.
             </p>
             <Button asChild size="lg">
               <Link href="/service-areas">View Service Areas</Link>

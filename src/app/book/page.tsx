@@ -5,10 +5,10 @@ import { BookingForm } from "@/components/booking-form";
 
 export const metadata: Metadata = {
   title: "Request Service",
-  description: `Request HVAC service from ${siteConfig.name}. Schedule your appointment online or call ${siteConfig.phone}.`,
+  description: `Request service from ${siteConfig.name}. Schedule your appointment online or call ${siteConfig.phone}.`,
   openGraph: {
     title: `Request Service | ${siteConfig.name}`,
-    description: `Schedule your HVAC service appointment today.`,
+    description: `Schedule your appointment today.`,
   },
 };
 
@@ -22,8 +22,8 @@ export default function BookPage() {
             Request Service
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
-            Fill out the form below to schedule your HVAC service. We'll
-            contact you shortly to confirm your appointment.
+            Fill out the form below to schedule your appointment. We'll
+            contact you shortly to confirm.
           </p>
         </div>
       </section>

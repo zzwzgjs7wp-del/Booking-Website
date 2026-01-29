@@ -5,10 +5,10 @@ import { CTAButton } from "@/components/cta-button";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Learn about ${siteConfig.name} - your trusted HVAC partner in ${siteConfig.serviceArea}. Licensed, insured, and committed to excellence.`,
+  description: `Learn about ${siteConfig.name} - your trusted partner in ${siteConfig.serviceArea}. Licensed, insured, and committed to excellence.`,
   openGraph: {
     title: `About Us | ${siteConfig.name}`,
-    description: `Professional HVAC services with a commitment to quality and customer satisfaction.`,
+    description: `Professional services with a commitment to quality and customer satisfaction.`,
   },
 };
 
@@ -36,12 +36,12 @@ const values = [
 ];
 
 const credentials = [
-  "EPA Certified Technicians",
-  "NATE Certified",
-  "Licensed HVAC Contractor",
+  "Certified Team",
+  "Licensed & Bonded",
   "BBB Accredited Business",
   "Fully Insured",
-  "10+ Years Experience",
+  "Years of Experience",
+  "Satisfaction Guarantee",
 ];
 
 export default function AboutPage() {
@@ -54,7 +54,7 @@ export default function AboutPage() {
             About {siteConfig.name}
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
-            Your trusted partner for HVAC services in {siteConfig.serviceArea}
+            Your trusted partner for professional services in {siteConfig.serviceArea}
           </p>
         </div>
       </section>
@@ -67,14 +67,12 @@ export default function AboutPage() {
             <div className="prose prose-lg text-gray-700 space-y-4">
               <p>
                 {siteConfig.name} was founded with a simple mission: to provide
-                exceptional HVAC services that keep homes and businesses
-                comfortable year-round. Based in {siteConfig.serviceArea}, we
-                understand the unique climate challenges our community faces.
+                exceptional service that meets the needs of our community. Based in {siteConfig.serviceArea}, we
+                understand what our customers need.
               </p>
               <p>
-                With over a decade of experience, our team of certified
-                technicians has helped thousands of customers with everything
-                from emergency AC repairs to complete system installations. We
+                With years of experience, our team has helped thousands of customers
+                with everything from consultations to installations. We
                 pride ourselves on honest pricing, quality workmanship, and
                 outstanding customer service.
               </p>
@@ -148,10 +146,9 @@ export default function AboutPage() {
               Our Commitment to You
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              We're committed to providing the highest quality HVAC services
+              We're committed to providing the highest quality service
               with transparent pricing, honest communication, and exceptional
-              customer care. Your comfort and satisfaction are our top
-              priorities.
+              customer care. Your satisfaction is our top priority.
             </p>
             <CTAButton
               type="both"

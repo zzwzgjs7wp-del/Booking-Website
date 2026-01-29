@@ -5,10 +5,10 @@ import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: `Contact ${siteConfig.name} for HVAC services in ${siteConfig.serviceArea}. Call ${siteConfig.phone} or fill out our contact form.`,
+  description: `Contact ${siteConfig.name} for services in ${siteConfig.serviceArea}. Call ${siteConfig.phone} or fill out our contact form.`,
   openGraph: {
     title: `Contact Us | ${siteConfig.name}`,
-    description: `Get in touch for HVAC services. We're here to help!`,
+    description: `Get in touch. We're here to help!`,
   },
 };
 
@@ -22,8 +22,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
-            Get in touch with us today. We're here to help with all your HVAC
-            needs.
+            Get in touch with us today. We're here to help.
           </p>
         </div>
       </section>

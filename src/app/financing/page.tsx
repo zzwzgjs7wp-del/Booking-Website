@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Financing Options",
-  description: `Flexible financing options for HVAC services in ${siteConfig.serviceArea}. Make your home comfort affordable with our payment plans.`,
+  description: `Flexible financing options in ${siteConfig.serviceArea}. Make your investment affordable with our payment plans.`,
   openGraph: {
     title: `Financing Options | ${siteConfig.name}`,
-    description: `Affordable payment plans for HVAC services.`,
+    description: `Affordable payment plans available.`,
   },
 };
 
@@ -21,7 +21,7 @@ const financingOptions = [
   },
   {
     title: "Low Monthly Payments",
-    description: "Spread the cost of your HVAC system over affordable monthly payments",
+    description: "Spread the cost over affordable monthly payments",
     features: ["Flexible terms", "Competitive rates", "Easy application"],
   },
   {
@@ -50,8 +50,8 @@ export default function FinancingPage() {
             Flexible Financing Options
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
-            Make your HVAC investment affordable with our flexible financing
-            plans. Get the comfort you deserve without breaking the bank.
+            Make your investment affordable with our flexible financing
+            plans. Get what you need without breaking the bank.
           </p>
         </div>
       </section>

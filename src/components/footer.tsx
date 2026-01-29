@@ -15,8 +15,8 @@ export function Footer() {
               {siteConfig.name}
             </h3>
             <p className="text-sm mb-4">
-              Professional HVAC services in {siteConfig.serviceArea}. Licensed,
-              insured, and committed to your comfort.
+              Professional services in {siteConfig.serviceArea}. Licensed,
+              insured, and committed to your satisfaction.
             </p>
             <div className="flex space-x-4">
               <a
@@ -81,26 +81,26 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/services/ac-repair"
+                  href="/services/consultation"
                   className="hover:text-primary transition-colors"
                 >
-                  AC Repair
+                  Consultation
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/ac-installation"
+                  href="/services/repair"
                   className="hover:text-primary transition-colors"
                 >
-                  AC Installation
+                  Repair
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/heating"
+                  href="/services/installation"
                   className="hover:text-primary transition-colors"
                 >
-                  Heating Services
+                  Installation
                 </Link>
               </li>
               <li>

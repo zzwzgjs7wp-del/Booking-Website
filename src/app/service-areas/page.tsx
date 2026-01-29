@@ -5,7 +5,7 @@ import { CTAButton } from "@/components/cta-button";
 
 export const metadata: Metadata = {
   title: "Service Areas",
-  description: `HVAC services in ${siteConfig.serviceArea} and surrounding areas. Check if we service your location.`,
+  description: `Services in ${siteConfig.serviceArea} and surrounding areas. Check if we service your location.`,
   openGraph: {
     title: `Service Areas | ${siteConfig.name}`,
     description: `We serve ${siteConfig.serviceArea} and surrounding communities.`,
@@ -13,21 +13,21 @@ export const metadata: Metadata = {
 };
 
 const serviceAreas = [
-  "Houston",
-  "Katy",
-  "Sugar Land",
-  "The Woodlands",
-  "Pearland",
-  "League City",
-  "Pasadena",
-  "Missouri City",
-  "Baytown",
-  "Friendswood",
-  "Spring",
-  "Cypress",
-  "Tomball",
-  "Humble",
-  "Kingwood",
+  "Downtown",
+  "North Side",
+  "South Side",
+  "East End",
+  "West End",
+  "Central",
+  "Midtown",
+  "Suburb A",
+  "Suburb B",
+  "Suburb C",
+  "Rural Area",
+  "Industrial District",
+  "Business Park",
+  "Residential Zone",
+  "Metro Area",
 ];
 
 export default function ServiceAreasPage() {
@@ -41,7 +41,7 @@ export default function ServiceAreasPage() {
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl">
             Proudly serving {siteConfig.serviceArea} and surrounding
-            communities with fast, reliable HVAC services
+            communities with professional services
           </p>
         </div>
       </section>
@@ -108,11 +108,11 @@ export default function ServiceAreasPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Local expertise in Houston-area HVAC systems",
-                "Fast response times for emergency repairs",
-                "Knowledge of local building codes and regulations",
-                "Competitive pricing for your area",
-                "Same-day service available",
+                "Local expertise in your area",
+                "Fast response times",
+                "Knowledge of local regulations",
+                "Competitive pricing",
+                "Same-day service when available",
                 "Fully licensed and insured",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">

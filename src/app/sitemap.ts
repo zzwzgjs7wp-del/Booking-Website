@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 import { services } from "@/config/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://arcticprohvac.com";
+  const baseUrl = "https://yourbusiness.com";
 
   const routes = [
     "",

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/data/"],
     },
-    sitemap: "https://arcticprohvac.com/sitemap.xml",
+    sitemap: "https://yourbusiness.com/sitemap.xml",
   };
 }
