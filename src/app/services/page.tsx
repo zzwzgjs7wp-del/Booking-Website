@@ -17,20 +17,21 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      {/* Header - Sony blue */}
+      <section className="relative bg-sony-hero bg-logo-pattern-dense py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-black/5" />
+        <div className="container relative mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Services
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl">
+          <p className="text-xl text-white/90 max-w-3xl">
             Professional solutions for your home and business in {siteConfig.serviceArea}
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/90 backdrop-blur bg-logo-pattern">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => {

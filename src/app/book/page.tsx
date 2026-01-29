@@ -15,13 +15,14 @@ export const metadata: Metadata = {
 export default function BookPage() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      {/* Header - Sony blue */}
+      <section className="relative bg-sony-hero bg-logo-pattern-dense py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-black/5" />
+        <div className="container relative mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Request Service
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl">
+          <p className="text-xl text-white/90 max-w-3xl">
             Fill out the form below to schedule your appointment. We'll
             contact you shortly to confirm.
           </p>
@@ -29,7 +30,7 @@ export default function BookPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/90 backdrop-blur">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-2xl border border-gray-200 p-8 md:p-12">
@@ -40,7 +41,7 @@ export default function BookPage() {
       </section>
 
       {/* Alternative Contact */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-[#0066b3]/5">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-700 mb-4">
             Prefer to speak with someone? Give us a call!

@@ -47,20 +47,21 @@ const credentials = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      {/* Header - Sony blue */}
+      <section className="relative bg-sony-hero bg-logo-pattern-dense py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-black/5" />
+        <div className="container relative mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             About {siteConfig.name}
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl">
+          <p className="text-xl text-white/90 max-w-3xl">
             Your trusted partner for professional services in {siteConfig.serviceArea}
           </p>
         </div>
       </section>
 
       {/* Story */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/90 backdrop-blur">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>

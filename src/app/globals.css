@@ -4,106 +4,62 @@
 
 @layer base {
   :root {
-    --background: 
-    0 0% 100%;
-    --foreground: 
-    0 0% 3.9%;
-    --card: 
-    0 0% 100%;
-    --card-foreground: 
-    0 0% 3.9%;
-    --popover: 
-    0 0% 100%;
-    --popover-foreground: 
-    0 0% 3.9%;
-    --primary: 
-    0 0% 9%;
-    --primary-foreground: 
-    0 0% 98%;
-    --secondary: 
-    0 0% 96.1%;
-    --secondary-foreground: 
-    0 0% 9%;
-    --muted: 
-    0 0% 96.1%;
-    --muted-foreground: 
-    0 0% 45.1%;
-    --accent: 
-    0 0% 96.1%;
-    --accent-foreground: 
-    0 0% 9%;
-    --destructive: 
-    0 84.2% 60.2%;
-    --destructive-foreground: 
-    0 0% 98%;
-    --border: 
-    0 0% 89.8%;
-    --input: 
-    0 0% 89.8%;
-    --ring: 
-    0 0% 3.9%;
-    --radius: 
-    0.5rem;
-    --chart-1: 
-    12 76% 61%;
-    --chart-2: 
-    173 58% 39%;
-    --chart-3: 
-    197 37% 24%;
-    --chart-4: 
-    43 74% 66%;
-    --chart-5: 
-    27 87% 67%;
+    /* Sony-inspired blue theme */
+    --background: 207 100% 98%;
+    --foreground: 207 70% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 207 70% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 70% 12%;
+    --primary: 207 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 207 30% 92%;
+    --secondary-foreground: 207 70% 12%;
+    --muted: 207 20% 94%;
+    --muted-foreground: 207 20% 45%;
+    --accent: 207 100% 35%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 207 20% 88%;
+    --input: 207 20% 88%;
+    --ring: 207 100% 35%;
+    --radius: 0.5rem;
+    --chart-1: 207 100% 35%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    /* Sony blue palette */
+    --sony-blue: 207 100% 35%;
+    --sony-blue-dark: 207 100% 22%;
+    --sony-blue-light: 207 80% 55%;
   }
   .dark {
-    --background: 
-    0 0% 3.9%;
-    --foreground: 
-    0 0% 98%;
-    --card: 
-    0 0% 3.9%;
-    --card-foreground: 
-    0 0% 98%;
-    --popover: 
-    0 0% 3.9%;
-    --popover-foreground: 
-    0 0% 98%;
-    --primary: 
-    0 0% 98%;
-    --primary-foreground: 
-    0 0% 9%;
-    --secondary: 
-    0 0% 14.9%;
-    --secondary-foreground: 
-    0 0% 98%;
-    --muted: 
-    0 0% 14.9%;
-    --muted-foreground: 
-    0 0% 63.9%;
-    --accent: 
-    0 0% 14.9%;
-    --accent-foreground: 
-    0 0% 98%;
-    --destructive: 
-    0 62.8% 30.6%;
-    --destructive-foreground: 
-    0 0% 98%;
-    --border: 
-    0 0% 14.9%;
-    --input: 
-    0 0% 14.9%;
-    --ring: 
-    0 0% 83.1%;
-    --chart-1: 
-    220 70% 50%;
-    --chart-2: 
-    160 60% 45%;
-    --chart-3: 
-    30 80% 55%;
-    --chart-4: 
-    280 65% 60%;
-    --chart-5: 
-    340 75% 55%;
+    --background: 207 70% 8%;
+    --foreground: 0 0% 98%;
+    --card: 207 60% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 207 60% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 207 100% 55%;
+    --primary-foreground: 207 70% 8%;
+    --secondary: 207 40% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 207 40% 18%;
+    --muted-foreground: 207 20% 65%;
+    --accent: 207 100% 55%;
+    --accent-foreground: 207 70% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 207 30% 22%;
+    --input: 207 30% 22%;
+    --ring: 207 100% 55%;
+    --chart-1: 207 100% 55%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -116,9 +72,42 @@
   }
 }
 
+/* Sony-inspired blue background with logo pattern */
+.bg-sony-inspired {
+  background: linear-gradient(
+    135deg,
+    hsl(207, 100%, 97%) 0%,
+    hsl(207, 80%, 92%) 25%,
+    hsl(207, 70%, 88%) 50%,
+    hsl(207, 80%, 92%) 75%,
+    hsl(207, 100%, 97%) 100%
+  );
+  background-color: hsl(207, 100%, 98%);
+}
+
+.bg-sony-hero {
+  background: linear-gradient(
+    180deg,
+    hsl(207, 100%, 35%) 0%,
+    hsl(207, 100%, 28%) 50%,
+    hsl(207, 100%, 22%) 100%
+  );
+}
+
+/* Logo pattern - repeated geometric "AI" / booking icons */
+.bg-logo-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066b3' fill-opacity='0.08'%3E%3Cpath d='M40 8 L48 24 L64 24 L52 36 L56 52 L40 44 L24 52 L28 36 L16 24 L32 24 Z'/%3E%3Cpath d='M20 60 L24 68 L20 76 L12 76 L8 68 L12 60 Z'/%3E%3Cpath d='M60 60 L64 68 L60 76 L52 76 L48 68 L52 60 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+.bg-logo-pattern-dense {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066b3' fill-opacity='0.12'%3E%3Crect x='5' y='5' width='12' height='12' rx='2'/%3E%3Crect x='43' y='5' width='12' height='12' rx='2'/%3E%3Crect x='24' y='22' width='12' height='16' rx='2'/%3E%3Ccircle cx='30' cy='42' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
 .bg-grid-pattern {
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, rgba(0, 102, 179, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 102, 179, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
 }

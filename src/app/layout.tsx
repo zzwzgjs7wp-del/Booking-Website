@@ -6,24 +6,25 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "LocalPulse - AI Appointment Booking & Retention",
-    template: `%s | LocalPulse`,
+    default: "AI Booking Solutions | Smart Appointment Scheduling",
+    template: `%s | AI Booking Solutions`,
   },
-  description: "AI-powered appointment booking and customer retention for local service businesses",
+  description: "AI-powered appointment booking for local businesses. Schedule smarter, reduce no-shows, grow your business.",
   keywords: [
     "appointment booking",
+    "AI scheduling",
     "local business",
     "customer retention",
     "AI chatbot",
     "scheduling software",
   ],
-  authors: [{ name: "LocalPulse" }],
+  authors: [{ name: "AI Booking Solutions" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "LocalPulse",
-    title: "LocalPulse - AI Appointment Booking & Retention",
-    description: "AI-powered appointment booking and customer retention for local service businesses",
+    siteName: "AI Booking Solutions",
+    title: "AI Booking Solutions | Smart Appointment Scheduling",
+    description: "AI-powered appointment booking for local businesses. Schedule smarter, reduce no-shows, grow your business.",
   },
   robots: {
     index: true,
@@ -38,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen bg-sony-inspired bg-logo-pattern`}>
         {children}
       </body>
     </html>

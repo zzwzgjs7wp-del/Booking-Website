@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Your Business",
+  name: "AI Booking Solutions",
   phone: "(555) 123-4567",
-  email: "hello@yourbusiness.com",
+  email: "hello@aibookingsolutions.com",
   address: {
     street: "123 Main Street",
     city: "Your City",
@@ -19,7 +19,7 @@ export const siteConfig = {
     google: "https://g.page/yourbusiness",
   },
   seo: {
-    defaultTitle: "Your Business | Book Appointments Online",
-    defaultDescription: "Schedule appointments online. Professional services in your area. Book your visit today.",
+    defaultTitle: "AI Booking Solutions | Smart Appointment Scheduling",
+    defaultDescription: "AI-powered appointment booking for local businesses. Schedule smarter, reduce no-shows, grow your business.",
   },
 } as const;
