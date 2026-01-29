@@ -4,62 +4,38 @@
 
 @layer base {
   :root {
-    /* Sony-inspired blue theme */
-    --background: 207 100% 98%;
-    --foreground: 207 70% 12%;
-    --card: 0 0% 100%;
-    --card-foreground: 207 70% 12%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 207 70% 12%;
-    --primary: 207 100% 35%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 207 30% 92%;
-    --secondary-foreground: 207 70% 12%;
-    --muted: 207 20% 94%;
-    --muted-foreground: 207 20% 45%;
-    --accent: 207 100% 35%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 60.2%;
+    /* Cyberpunk navy theme */
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 222 47% 8%;
+    --secondary: 222 40% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 40% 16%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 330 100% 60%;
+    --accent-foreground: 222 47% 8%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 207 20% 88%;
-    --input: 207 20% 88%;
-    --ring: 207 100% 35%;
+    --border: 222 40% 20%;
+    --input: 222 40% 20%;
+    --ring: 187 100% 50%;
     --radius: 0.5rem;
-    --chart-1: 207 100% 35%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    /* Sony blue palette */
-    --sony-blue: 207 100% 35%;
-    --sony-blue-dark: 207 100% 22%;
-    --sony-blue-light: 207 80% 55%;
-  }
-  .dark {
-    --background: 207 70% 8%;
-    --foreground: 0 0% 98%;
-    --card: 207 60% 12%;
-    --card-foreground: 0 0% 98%;
-    --popover: 207 60% 12%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 207 100% 55%;
-    --primary-foreground: 207 70% 8%;
-    --secondary: 207 40% 18%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 207 40% 18%;
-    --muted-foreground: 207 20% 65%;
-    --accent: 207 100% 55%;
-    --accent-foreground: 207 70% 8%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 207 30% 22%;
-    --input: 207 30% 22%;
-    --ring: 207 100% 55%;
-    --chart-1: 207 100% 55%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 187 100% 50%;
+    --chart-2: 330 100% 60%;
+    --chart-3: 280 100% 70%;
+    --chart-4: 43 100% 60%;
+    --chart-5: 0 100% 60%;
+    /* Cyberpunk palette */
+    --navy: 222 47% 8%;
+    --navy-light: 222 40% 14%;
+    --neon-cyan: 187 100% 50%;
+    --neon-magenta: 330 100% 60%;
+    --neon-purple: 280 100% 70%;
   }
 }
 
@@ -72,42 +48,96 @@
   }
 }
 
-/* Sony-inspired blue background with logo pattern */
-.bg-sony-inspired {
-  background: linear-gradient(
-    135deg,
-    hsl(207, 100%, 97%) 0%,
-    hsl(207, 80%, 92%) 25%,
-    hsl(207, 70%, 88%) 50%,
-    hsl(207, 80%, 92%) 75%,
-    hsl(207, 100%, 97%) 100%
-  );
-  background-color: hsl(207, 100%, 98%);
+/* Full navy background */
+.bg-cyberpunk {
+  background-color: hsl(222, 47%, 8%);
+  background-image:
+    linear-gradient(to right, rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-.bg-sony-hero {
+.bg-cyberpunk-hero {
   background: linear-gradient(
     180deg,
-    hsl(207, 100%, 35%) 0%,
-    hsl(207, 100%, 28%) 50%,
-    hsl(207, 100%, 22%) 100%
+    hsl(222, 47%, 8%) 0%,
+    hsl(222, 50%, 6%) 50%,
+    hsl(222, 55%, 4%) 100%
   );
+  position: relative;
 }
 
-/* Logo pattern - repeated geometric "AI" / booking icons */
+.bg-cyberpunk-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* Scan line overlay */
+.bg-scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+  pointer-events: none;
+}
+
+/* Neon glow */
+.text-neon-cyan {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.text-neon-magenta {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.border-neon {
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.border-neon-magenta {
+  border-color: rgba(255, 0, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+/* Logo pattern - cyberpunk grid */
 .bg-logo-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066b3' fill-opacity='0.08'%3E%3Cpath d='M40 8 L48 24 L64 24 L52 36 L56 52 L40 44 L24 52 L28 36 L16 24 L32 24 Z'/%3E%3Cpath d='M20 60 L24 68 L20 76 L12 76 L8 68 L12 60 Z'/%3E%3Cpath d='M60 60 L64 68 L60 76 L52 76 L48 68 L52 60 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300ffff' fill-opacity='0.06'%3E%3Cpath d='M40 8 L48 24 L64 24 L52 36 L56 52 L40 44 L24 52 L28 36 L16 24 L32 24 Z'/%3E%3Cpath d='M20 60 L24 68 L20 76 L12 76 L8 68 L12 60 Z'/%3E%3Cpath d='M60 60 L64 68 L60 76 L52 76 L48 68 L52 60 Z'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 80px 80px;
 }
 
 .bg-logo-pattern-dense {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066b3' fill-opacity='0.12'%3E%3Crect x='5' y='5' width='12' height='12' rx='2'/%3E%3Crect x='43' y='5' width='12' height='12' rx='2'/%3E%3Crect x='24' y='22' width='12' height='16' rx='2'/%3E%3Ccircle cx='30' cy='42' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300ffff' fill-opacity='0.08'%3E%3Crect x='5' y='5' width='12' height='12' rx='2'/%3E%3Crect x='43' y='5' width='12' height='12' rx='2'/%3E%3Crect x='24' y='22' width='12' height='16' rx='2'/%3E%3Ccircle cx='30' cy='42' r='4'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 60px 60px;
 }
 
 .bg-grid-pattern {
   background-image:
-    linear-gradient(to right, rgba(0, 102, 179, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 102, 179, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* Glow animation */
+@keyframes neon-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-neon-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
 }

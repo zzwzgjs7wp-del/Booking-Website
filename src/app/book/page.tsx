@@ -16,7 +16,7 @@ export default function BookPage() {
   return (
     <div className="min-h-screen">
       {/* Header - Sony blue */}
-      <section className="relative bg-sony-hero bg-logo-pattern-dense py-16 overflow-hidden">
+      <section className="relative bg-cyberpunk-hero bg-logo-pattern-dense py-16 overflow-hidden">
         <div className="absolute inset-0 bg-black/5" />
         <div className="container relative mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -30,10 +30,10 @@ export default function BookPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20 bg-white/90 backdrop-blur">
+      <section className="py-20 bg-white/5 backdrop-blur">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 md:p-12">
+            <div className="bg-white/5 rounded-2xl border border-neon-cyan/30 p-8 md:p-12">
               <BookingForm />
             </div>
           </div>
@@ -41,14 +41,14 @@ export default function BookPage() {
       </section>
 
       {/* Alternative Contact */}
-      <section className="py-12 bg-[#0066b3]/5">
+      <section className="py-12 bg-neon-cyan/5">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-300 mb-4">
             Prefer to speak with someone? Give us a call!
           </p>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-            className="inline-flex items-center gap-2 text-xl font-semibold text-primary hover:underline"
+            className="inline-flex items-center gap-2 text-xl font-semibold text-neon-cyan hover:underline"
           >
             <Phone className="h-5 w-5" />
             {siteConfig.phone}

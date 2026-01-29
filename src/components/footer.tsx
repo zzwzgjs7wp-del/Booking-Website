@@ -6,12 +6,12 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#003087] text-white/90">
+    <footer className="bg-[#050510] border-t border-neon-cyan/20 text-gray-300">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">
+            <h3 className="text-neon-cyan text-lg font-bold mb-4 font-display">
               {siteConfig.name}
             </h3>
             <p className="text-sm mb-4">
@@ -23,7 +23,7 @@ export function Footer() {
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#66b3ff] transition-colors"
+                className="hover:text-neon-cyan transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
@@ -33,17 +33,17 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-neon-cyan font-semibold mb-4 font-display">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-[#66b3ff] transition-colors">
+                <Link href="/" className="hover:text-neon-cyan transition-colors">
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Services
                 </Link>
@@ -51,7 +51,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/service-areas"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Service Areas
                 </Link>
@@ -59,7 +59,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   About Us
                 </Link>
@@ -67,7 +67,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Contact
                 </Link>
@@ -77,12 +77,12 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Services</h4>
+            <h4 className="text-neon-cyan font-semibold mb-4 font-display">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/services/consultation"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Consultation
                 </Link>
@@ -90,7 +90,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/repair"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Repair
                 </Link>
@@ -98,7 +98,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/installation"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Installation
                 </Link>
@@ -106,7 +106,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/maintenance"
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   Maintenance
                 </Link>
@@ -116,13 +116,13 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-neon-cyan font-semibold mb-4 font-display">Contact Us</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <a
                   href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   {siteConfig.phone}
                 </a>
@@ -131,7 +131,7 @@ export function Footer() {
                 <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="hover:text-[#66b3ff] transition-colors"
+                  className="hover:text-neon-cyan transition-colors"
                 >
                   {siteConfig.email}
                 </a>
@@ -157,7 +157,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm">
+        <div className="border-t border-neon-cyan/20 mt-8 pt-8 text-center text-sm">
           <p>
             © {currentYear} {siteConfig.name}. All rights reserved. | Licensed
             & Insured

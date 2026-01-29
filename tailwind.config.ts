@@ -10,6 +10,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+  	fontFamily: {
+  		sans: ["var(--font-rajdhani)", "system-ui", "sans-serif"],
+  		display: ["var(--font-orbitron)", "monospace"],
+  	},
   	container: {
   		center: true,
   		padding: '2rem',
@@ -58,6 +62,11 @@ const config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			neon: {
+  				cyan: '#00ffff',
+  				magenta: '#ff00ff',
+  				purple: '#bf00ff',
   			}
   		},
   		borderRadius: {
@@ -74,18 +83,23 @@ const config = {
   					height: 'var(--radix-accordion-content-height)'
   				}
   			},
-  			'accordion-up': {
+  		'accordion-up': {
   				from: {
   					height: 'var(--radix-accordion-content-height)'
   				},
   				to: {
   					height: '0'
   				}
+  			},
+  			'neon-pulse': {
+  				'0%, 100%': { opacity: '1' },
+  				'50%': { opacity: '0.6' }
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'neon-pulse': 'neon-pulse 2s ease-in-out infinite'
   		}
   	}
   },

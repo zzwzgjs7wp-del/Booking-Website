@@ -18,12 +18,12 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-[#0066b3]/20 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <nav className="sticky top-0 z-50 w-full border-b border-neon-cyan/30 bg-[#0a0a14]/95 backdrop-blur supports-[backdrop-filter]:bg-[#0a0a14]/80">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-[#0066b3]">
+            <span className="text-2xl font-bold text-neon-cyan font-display">
               {siteConfig.name}
             </span>
           </Link>
@@ -32,12 +32,12 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-6">
             <Link
               href="/"
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
             >
               Home
             </Link>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-gray-700 hover:text-primary transition-colors">
+              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors">
                 Services
                 <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
@@ -53,29 +53,35 @@ export function Navbar() {
             </DropdownMenu>
             <Link
               href="/service-areas"
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
             >
               Service Areas
             </Link>
             <Link
               href="/financing"
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
             >
               Financing
             </Link>
             <Link
+              href="/docs/forecasting"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
+            >
+              How It Works
+            </Link>
+            <Link
               href="/about"
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+              className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors"
             >
               Contact
             </Link>
-            <Button asChild className="bg-[#0066b3] hover:bg-[#005599]">
+            <Button asChild className="bg-neon-cyan text-[#0a0a1a] hover:bg-neon-cyan/90 font-display">
               <Link href="/book" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 Request Service
@@ -103,20 +109,20 @@ export function Navbar() {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="text-sm font-medium text-gray-700 hover:text-primary"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <div className="space-y-2">
-                <div className="text-sm font-semibold text-gray-900">
+                <div className="text-sm font-semibold text-white">
                   Services
                 </div>
                 {services.map((service) => (
                   <Link
                     key={service.slug}
                     href={`/services/${service.slug}`}
-                    className="block pl-4 text-sm text-gray-600 hover:text-primary"
+                    className="block pl-4 text-sm text-gray-400 hover:text-neon-cyan"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {service.title}
@@ -125,33 +131,40 @@ export function Navbar() {
               </div>
               <Link
                 href="/service-areas"
-                className="text-sm font-medium text-gray-700 hover:text-primary"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Service Areas
               </Link>
               <Link
                 href="/financing"
-                className="text-sm font-medium text-gray-700 hover:text-primary"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Financing
               </Link>
               <Link
+                href="/docs/forecasting"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                How It Works
+              </Link>
+              <Link
                 href="/about"
-                className="text-sm font-medium text-gray-700 hover:text-primary"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-sm font-medium text-gray-700 hover:text-primary"
+                className="text-sm font-medium text-gray-300 hover:text-neon-cyan"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
               </Link>
-              <Button asChild className="w-full bg-[#0066b3] hover:bg-[#005599]">
+              <Button asChild className="w-full bg-neon-cyan text-[#0a0a1a] hover:bg-neon-cyan/90 font-display">
                 <Link
                   href="/book"
                   className="flex items-center justify-center gap-2"

@@ -18,7 +18,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Header - Sony blue */}
-      <section className="relative bg-sony-hero bg-logo-pattern-dense py-16 overflow-hidden">
+      <section className="relative bg-cyberpunk-hero bg-logo-pattern-dense py-16 overflow-hidden">
         <div className="absolute inset-0 bg-black/5" />
         <div className="container relative mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -31,7 +31,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white/90 backdrop-blur bg-logo-pattern">
+      <section className="py-20 bg-white/5 backdrop-blur bg-logo-pattern">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => {

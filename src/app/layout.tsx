@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Orbitron, Rajdhani } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
+const rajdhani = Rajdhani({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-rajdhani" });
 
 export const metadata: Metadata = {
   title: {
@@ -38,8 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-sony-inspired bg-logo-pattern`}>
+    <html lang="en" className="dark">
+      <body className={`${orbitron.variable} ${rajdhani.variable} font-sans min-h-screen bg-cyberpunk bg-logo-pattern text-white`}>
         {children}
       </body>
     </html>
